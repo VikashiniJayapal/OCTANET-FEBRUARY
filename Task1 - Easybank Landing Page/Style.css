@@ -1,0 +1,359 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body
+{
+    overflow-x: hidden;
+}
+
+/* Header */
+
+.header
+{
+    width: 100%;
+    padding: 22px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+}
+
+.header ul
+{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    color: hsl(233, 8%, 62%);
+    font-family: 'Public Sans', sans-serif;
+    cursor: pointer;
+}
+
+.header li:hover
+{
+    text-decoration: underline;
+    text-decoration-color: aqua;
+    text-decoration-thickness: 3px;
+}
+
+.header button
+{
+    border-radius: 18px;
+    border-width: 0px;
+    padding: 10px 2%;
+    background-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    font-family: 'Public Sans', sans-serif;
+    color: white;
+    cursor: pointer;
+}
+
+/* Banner */
+
+.banner
+{
+    background-color: hsl(0, 0%, 98%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 70px;
+}
+
+.banner-details
+{
+    width: 65%;
+    padding: 160px 0% 180px 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.banner-details h1
+{
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 400;
+    font-size: 45px;
+}
+
+.banner-details p
+{
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 300px;
+    font-size: 15px;
+    color: hsl(233, 8%, 62%);;
+}
+
+.banner-details button
+{
+    width: 30%;
+    border-radius: 20px;
+    border-width: 0px;
+    padding: 12px 3%;
+    background-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    font-family: 'Public Sans', sans-serif;
+    color: white;
+    cursor: pointer;
+}
+
+.banner-image
+{
+    position: relative;
+    display: block;
+    width: 100%;
+    background-image: url(./images//bg-intro-desktop.svg);
+    background-position: 1rem -18rem;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.banner-image img
+{
+    height: 142vh;
+    position: absolute;
+    top:-2rem;
+    right: -7rem;
+    z-index: 1;
+}
+
+/* Features */
+
+.features
+{
+    width: 100%;
+    padding: 100px 10%;
+    background-color: hsl(220, 16%, 96%);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.features-desc
+{
+    width: 53%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-family: 'Public Sans', sans-serif;
+}
+
+.features-desc h2
+{
+    font-weight: 300;
+    font-size: 25px;
+    font-family: 'Public Sans', sans-serif;
+}
+
+.features-desc p
+{
+    color: hsl(233, 8%, 62%);
+    font-weight: 300;
+    font-size: 13px;
+    font-family: 'Public Sans', sans-serif;
+}
+
+.features-container 
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.feature
+{
+    width: 21%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.feature img
+{
+    width: 25%;
+}
+
+.feature h3
+{
+    font-weight: 300;
+    font-size: 20px;
+    font-family: 'Public Sans', sans-serif;
+}
+
+.feature p
+{
+    color: hsl(233, 8%, 62%);
+    font-weight: 300;
+    font-size: 13px;
+    font-family: 'Public Sans', sans-serif;
+}
+
+/* Article */
+
+.article
+{
+    background-color: hsl(0, 0%, 98%);
+    width: 100%;
+    padding: 50px 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.article h2
+{
+    font-weight: 300;
+    font-size: 25px;
+    font-family: 'Public Sans', sans-serif;
+}
+
+.article-container
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.article-detail
+{
+    width: 25%;
+    background-color: white;
+    font-family: 'Public Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.article-detail img
+{
+    height: 30vh;
+}
+
+.article-detail h4
+{
+    font-weight: 400;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.article-detail h4:hover
+{
+    color: aqua;
+}
+
+.article-detail small
+{
+    color: hsl(233, 8%, 62%);
+}
+
+.article-detail p
+{
+    color: hsl(233, 8%, 62%);
+    font-size: 15px;
+}
+
+/* Footer */
+
+.footer
+{
+    background-color: hsl(233, 26%, 24%);
+    width: 100%;
+    padding: 40px 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+.footer-left
+{
+    display: flex;
+    gap: 130px;
+}
+
+.footer-logo
+{
+    display: flex;
+    position: relative;
+}
+
+.footer-logo h2
+{
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    text-align: center; 
+    color: white; 
+    font-size: 28px;
+}
+
+.footer-icons
+{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.Social-icons
+{
+    display: flex;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.Social-icons:hover
+{
+    color: aqua;
+}
+
+.footer-lists
+{
+    display: flex;
+    gap: 100px;
+    justify-content: flex-start;
+    color: white;
+    cursor: pointer;
+}
+
+.footer-lists ul
+{
+    list-style-type: none;
+    font-family: 'Public Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-list li:hover
+{
+    color: aqua;
+}
+
+.footer-end
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: hsl(233, 8%, 62%);
+    font-family: 'Public Sans', sans-serif;
+}
+
+.footer-end button
+{
+    border-radius: 20px;
+    border-width: 0px;
+    padding: 15px 3%;
+    background-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    font-family: 'Public Sans', sans-serif;
+    cursor: pointer;
+}
